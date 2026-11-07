@@ -1,0 +1,33 @@
+﻿<Window x:Class="SoundPad.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SoundPad"
+        mc:Ignorable="d" Height="450" Width="800" Title="SoundPad">
+    <Grid Background="#F4E8D3">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0*"/>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="0*"/>
+        </Grid.ColumnDefinitions>
+        <StackPanel Orientation="Vertical" Grid.ColumnSpan="2" >
+            
+            <StackPanel Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Top">
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
+                    <Button Style="{StaticResource ButtonSounds}" x:Name="stop" Content="Остановить аудио" Click="Button_Click" Margin="10"/>
+                    <Label Content="Выберите звук" HorizontalAlignment="Center" Margin="10" VerticalAlignment="Center" Height="30" Width="96" Grid.Column="1"/>
+                    <Slider Margin="10" x:Name="VolumeControl" Grid.ColumnSpan="2" Width="120" HorizontalAlignment="Center" VerticalAlignment="Center" ValueChanged="VolumeControl_ValueChanged" Maximum="1" Minimum="0" Value="0.5" TickFrequency="0.1" IsSnapToTickEnabled="True"/>
+                    <MediaElement x:Name="mediaElement" Visibility="Collapsed" LoadedBehavior="Manual" UnloadedBehavior="Stop"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Grid.Column="1" Margin="10">
+                    <Button Style="{StaticResource ButtonSounds}" x:Name="dobri" Content="Добри" Click="Button_Click"/>
+                    <Button Style="{StaticResource ButtonSounds}" x:Name="vibe" Content="Плюс Вайбик" Click="Button_Click"/>
+                    <Button Style="{StaticResource ButtonSounds}" x:Name="ogo" Content="Ого" Click="Button_Click"/>
+                    <Button Style="{StaticResource ButtonSounds}" x:Name="superme" Content="Суперма" Click="Button_Click"/>
+                    <Button Style="{StaticResource ButtonSounds}" x:Name="imsucking" Content="Я сасал" Click="Button_Click"/>
+                </StackPanel>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Window>

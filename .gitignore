@@ -1,5 +1,26 @@
-bin/
-obj/
-/packages/
+# Папки с бинарниками и кэшами сборок
+[Bb]in/
+[Oo]bj/
+
+# Пакеты NuGet
+packages/
+*.nupkg
+
+# Файлы настроек IDE (JetBrains Rider / Visual Studio)
+.idea/
+.vs/
+.run/
+*.user
+*.sln.DotSettings.user
+
+# Файлы кэша ReSharper
+_ReSharper.*/
+*.[Rr]e[Ss]harper
 riderModule.iml
-/_ReSharper.Caches/
+
+# Логи сборки и ошибки
+*.log
+
+# Временные файлы ОС
+Thumbs.db
+.DS_Store

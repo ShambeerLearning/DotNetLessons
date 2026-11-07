@@ -1,0 +1,16 @@
+﻿<Window x:Class="Scary.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Scary"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <StackPanel VerticalAlignment="Center">
+            <Button Width="170" Height="50" FontSize="20" Content="Пиздец" Margin="5" Background="Aquamarine" HorizontalAlignment="Center" VerticalAlignment="Center" Name="BtnDestroy" Click="BtnDestroy_Click"></Button>
+            <Button Width="170" Height="50" FontSize="20" Content="Test" Margin="5" Background="Aquamarine" HorizontalAlignment="Center" VerticalAlignment="Center" Name="Test" Click="Test_Click"></Button>
+        </StackPanel>
+        
+    </Grid>
+</Window>
